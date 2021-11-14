@@ -1,0 +1,358 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	padding: 0;
+	margin: 0;
+}
+/*form contact*/
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  color: #B1B1B1;
+}
+
+#xacnhan input{
+	border-radius: 15px;
+}
+.btn {
+  display: inline-block;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+.content {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content__section__btn {
+  padding: 1rem 3rem;
+  background-color: #fff8f0;
+  border-radius: 20px;
+}
+.content__section__btn:hover {
+  box-shadow: 0rem 0.5rem 0.7rem #f8aeb9;
+  transform: translateY(-0.5rem);
+}
+.content__section__btn:active {
+  transform: translateY(-0.2rem);
+  box-shadow: 0rem 0.4rem 0.6rem #f8aeb9;
+}
+.modal {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #f8aeb9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  transition: all 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+.modal__content{
+  display: flex;
+  justify-items: center;
+  transform: translateY(-5rem);
+  transition: all 0.5s;
+  flex-direction: column;
+  background-color: white;
+  width: 50%;
+  border-radius: 20px;
+}
+.modal__content h3 {
+  font-family:'Patrick Hand', cursive;
+  align-self: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: grey;
+}
+
+.modal__content span{
+	font-size: 15pt;
+}
+
+#contact{
+	font-family:'Patrick Hand', cursive;
+}
+.modal__content > * {
+  margin: 0 1rem;
+}
+.modal__content > input {
+  height: 1.5rem;
+  border: none;
+  border-bottom: 1px solid #B1B1B1;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.modal__placeholder {
+  font-size: 0.6rem;
+  color: grey;
+}
+.modal__forgot {
+  font-size: 8pt;
+  align-self: center;
+  margin-bottom: 1rem;
+  transition: all 0.2s;
+}
+.modal__forgot:hover {
+  color: #f8aeb9;
+  cursor: pointer;
+}
+.modal__btn {
+  font-family:'Patrick Hand', cursive;
+  justify-self: flex-end;
+  margin-bottom: 1rem;
+  border-radius: 15px;
+  padding: 0.5rem 0.8rem;
+  background-color: #d4e7fc;
+  color: #6d392e;
+  font-size: 15pt;
+  font-weight: 600;
+}
+.modal__btn:hover {
+  box-shadow: 0rem 0.4rem 0.6rem rgba(158, 158, 158, 0.9);
+}
+.modal__btn:active {
+  transform: translateY(0.2rem);
+  box-shadow: 0rem 0.4rem 0.4rem #f8aeb9;
+}
+.visible {
+  opacity: 1;
+  visibility: visible;
+}
+.position {
+  transform: translateY(0);
+}
+
+/*form contact*/
+.main-title{
+	font-family: 'Chewy', cursive;
+	font-size: 15pt;
+}
+
+.text-menu{
+	padding: 10px 25px;
+}
+
+.center{
+	justify-content: center;
+	align-items: center;
+}
+.align-center{
+	text-align: center;
+}
+.container{
+	width: 1140px;
+	margin: auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 50px;
+	justify-content: center;
+}
+
+.roww{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.tab{
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+}
+.tab button{
+	font-family:'Patrick Hand', cursive;
+	font-size: 18pt;
+}
+.tablinks{
+	padding: 8px 20px;
+	background: none;
+	margin: 0 20px;
+	border-radius: 20px;
+	border: 2px solid #2E2D2D;
+	cursor: grab;
+	transition: all 0.5s;
+	color:black;
+}
+.tablinks:hover{
+	border-color:white;
+	background: #d4e7fc;
+	color: black;
+	
+}
+.active{
+	border-color: black;
+	background: #f8aeb9;
+}
+.items{
+	overflow: hidden;
+	transition: all 2s;
+	animation: fade 0.5s linear;
+	justify-content: center;
+	align-items: center;	
+}
+.items img{
+	width:100%;
+}
+
+@keyframes fade{
+	from{
+		opacity: 0;
+		transform: translate(-20px)
+	}
+	to{
+		opacity: 1;
+		transform: translate(0px)
+	}
+}
+.text-n{
+	text-align: left;
+	padding: 0 30px;
+ 
+}
+#main{
+	height: 140vh;
+}
+
+.n:hover{
+	color: #f97a91;
+}
+
+.scale img:hover{
+	transform: scale(1.5);
+	z-index: 99999;
+}
+.scale img{
+	transition: all 2s;
+}
+
+
+#back-to-top{
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	z-index: 10000;
+	font-size: 25pt;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-self: center;
+	justify-content: center;
+	border: 1px solid white;
+	border-radius: 50%;
+	line-height: 40px;
+}
+#back-to-top a{
+	color: #ba853b;
+	display: block;
+}
+
+#back-to-top a:hover{
+	background: pink;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-self: center;
+	justify-content: center;
+	color:#6D392E;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #f8aeb9;
+  color: #6d392e;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  float: right;
+  font-weight: 600;
+}
+
+input[type=submit]:hover {
+  background-color: #d4e7fc;
+  font-weight: 700;
+}
+
+.containerr {
+  border-radius: 50%;
+  background-color: #ffe0e1;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.dk{
+	padding: 50px 0;
+	text-align: center;
+}
+.items{
+	border-radius: 20px;
+}
+.items img{
+	border-radius: 20px;
+	box-shadow: 4px 4px 10px 0px gray;
+	border: 5px dashed #f97a91;
+}
+.box:hover{
+	background: #fcf8cc;
+	border-radius: 30px;
+}
+
+
+
+
