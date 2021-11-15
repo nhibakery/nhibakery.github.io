@@ -194,5 +194,63 @@ html{
 	
 }
 
+/*FAQ*/
+.faq {
+  font-family:'Patrick Hand', cursive;
+  font-size: 20pt;
+  font-weight: 400;
+  background: #ffe0e1;
+  color: #6d392e;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  text-align: center;
+  height: 150vh;
+  border-radius: 50%;
+  padding: 40px;
+}
+.faq h1 {
+  font-size: clamp(30pt, 4vw, 30px);
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+.mainn {
+  max-width: 520px;
+  margin: 0 auto;
+}
+summary {
+  font-size: 23pt;
+  font-weight: 600;
+  background: linear-gradient(45deg, #fc6780, #fcb0b1);
+  color: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  outline: none;
+  border-radius: 0.25rem;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+}
+p { text-align: left; }
+details[open] summary ~ * {
+  animation: sweep .5s ease-in-out;
+}
+@keyframes sweep {
+  0%    {opacity: 0; margin-top: -10px}
+  100%  {opacity: 1; margin-top: 0px}
+}
+details > summary::after {
+  position: absolute;
+  content: "+";
+  right: 20px;
+}
+details[open] > summary::after {
+  position: absolute;
+  content: "-";
+  right: 20px;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
 
 
