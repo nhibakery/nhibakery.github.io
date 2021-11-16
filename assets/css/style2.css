@@ -144,11 +144,22 @@ html{
 	background: #fcf8cc;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
-	height: 100px;
+	height: 200px;
 	margin: auto;
 	overflow: hidden;
 	position: relative;
 	
+}
+
+.scale3:hover{
+	transform: scale(1.7);
+	z-index: 9999999;
+}
+.scale3 {
+	transition: all 2s;
+}
+.slidee{
+	margin-top: 50px;
 }
 
 
