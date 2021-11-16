@@ -251,6 +251,60 @@ details[open] > summary::after {
 details > summary::-webkit-details-marker {
   display: none;
 }
+/*animation text 2*/
+
+.text-rotating{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  background: #d4e7fc;
+  margin-top: 40px;
+}
+
+.rotating-text {
+  font-family:'Patrick Hand', cursive;
+  font-size: 30pt;
+  font-weight: 700;
+  color: #6d392e;
+  transform: translateX(-80px);
+}
+.rotating-text p {
+  display: inline-flex;
+  margin: 0;
+  vertical-align: top;
+}
+.rotating-text p .word {
+  position: absolute;
+  display: flex;
+  opacity: 0;
+}
+.rotating-text p .word .letter {
+  transform-origin: center center 25px;
+}
+.rotating-text p .word .letter.out {
+  transform: rotateX(90deg);
+  transition: 0.3s cubic-bezier(0.6, 0, 0.7, 0.2);
+}
+.rotating-text p .word .letter.in {
+  transition: 0.3s ease;
+}
+.rotating-text p .word .letter.behind {
+  transform: rotateX(-90deg);
+}
+
+
+.cam {
+  color: #ff6607;
+}
+
+.hong {
+  color: #fc6780;
+}
+
+.xanh {
+  color: #2ecc71;
+}
 
 
 
