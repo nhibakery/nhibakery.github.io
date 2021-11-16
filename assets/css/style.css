@@ -351,6 +351,7 @@ input[type=submit]:hover {
 .box:hover{
 	background: #fcf8cc;
 	border-radius: 30px;
+        border: 5px dashed #f97a91;
 }
 
 
