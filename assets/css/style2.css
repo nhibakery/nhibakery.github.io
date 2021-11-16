@@ -258,7 +258,7 @@ details > summary::-webkit-details-marker {
   justify-content: center;
   align-items: center;
   height: 30vh;
-  background: #d4e7fc;
+  background-color: transparent;
   margin-top: 40px;
 }
 
