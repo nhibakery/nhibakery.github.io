@@ -185,7 +185,7 @@ html{
 }
 
 .slidervip .slide-track{
-	animation: scroll 20s linear infinite;
+	animation: scroll 13s linear infinite;
 	display: flex;
 	width: calc(250px * 14);
 }
@@ -316,9 +316,9 @@ details > summary::-webkit-details-marker {
 .xanh {
   color: #2ecc71;
 }
-
-.quote h1:hover{
+.quote h1:hover span {display:none}
+.quote h1:hover:after {
+	content:"CHẮC CHẮN LUÔN NHA!"; 
 	color: #fc6780;
 	font-size: 35pt;
 }
-
