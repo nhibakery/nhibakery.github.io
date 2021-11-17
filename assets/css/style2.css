@@ -317,5 +317,8 @@ details > summary::-webkit-details-marker {
   color: #2ecc71;
 }
 
-
+.quote h1:hover{
+	color: #fc6780;
+	font-size: 35pt;
+}
 
