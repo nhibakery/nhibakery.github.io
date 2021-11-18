@@ -77,7 +77,7 @@ input, select, textarea {
 	}
 
 	body {
-		background:#d4e7fc;
+		background-image: url("../../bg-body.png");
 		color: #6d392e;
 		font-size: 15pt;
 		font-family:'Patrick Hand', cursive;
