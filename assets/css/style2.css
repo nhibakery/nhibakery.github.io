@@ -141,7 +141,7 @@ html{
 
 /*slidervip*/
 .slidervip{
-	background: #fcf8cc;
+	background-image: url("../../bg-slider.png");
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 	height: 200px;
@@ -152,7 +152,7 @@ html{
 }
 
 .scale3:hover{
-	transform: scale(1.7);
+	transform: scale(1.8);
 	z-index: 9999999;
 }
 .scale3 {
