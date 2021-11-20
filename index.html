@@ -804,7 +804,32 @@
 	<div id="back-to-top">
 		<a href="#"><ion-icon name="arrow-up-outline"></ion-icon></a>
 	</div>
-	
+	<!--chatbox-->
+<button class="open-buttonn" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Bạn muốn N-Bakery tư vấn gì không?</h1>
+
+    <label for="msg"><b>Nội dung</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+   <a href="#" class="btn">Gửi</a>
+    <button type="button" class="btn cancel" onclick="closeForm()">Đóng</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+<!--. -->
 <script src="assets/js/java2.js"></script>		 
 			 
 <!--	back-to-top-->
