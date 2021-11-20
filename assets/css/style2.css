@@ -4,6 +4,88 @@
 html{
 	scroll-behavior: smooth;
 }
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-buttonn {
+  text-align: center;
+  color: #6d392e;
+  font-size: 13pt;
+  padding: 5px;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 80px;
+  width: 120px;
+  font-family:'Patrick Hand', cursive;
+  border: 1px solid black;
+}
+.btn{
+	text-align: center;
+}
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: #ffe29c;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border: 1px solid black;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: 1px solid black;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ffe0e1;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #8bc2f9;
+  color: black;
+  padding: 10px 15px;
+  border: 1px solid black;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  font-family:'Patrick Hand', cursive;
+  font-size: 13pt;
+}
+.form-container .btn:hover {
+	background: #ffcc02;
+	color: black;
+}
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: pink;
+  color:#6d392e;
+  font-family:'Patrick Hand', cursive;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
 
 .menu__item {
   width: 50px;
