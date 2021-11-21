@@ -12,16 +12,19 @@
   box-sizing: inherit;
   color: #B1B1B1;
 }
-
 #xacnhan a{
+        padding: 10px;
 	text-decoration: none;
 	font-weight: 600;
 	border-radius: 15px;
-	background:#8bc2f9;
+	background:#badafc;
+	color: #6d392e;
+	border: 1px solid black;
 }
 #xacnhan a:hover{
-	background:#f9df75;
+	background:#ffe29c;
 	font-weight:600;
+	color: deeppink;
 }
 .btn {
   display: inline-block;
