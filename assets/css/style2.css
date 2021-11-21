@@ -400,7 +400,7 @@ details > summary::-webkit-details-marker {
 }
 .quote h1:hover span {display:none}
 .quote h1:hover:after {
-	content:"CHẮC CHẮN LUÔN NHA!"; 
+	content:"CHẮC CHẮN LUÔN NHA !!!"; 
 	color: #fc6780;
 	font-size: 35pt;
 }
