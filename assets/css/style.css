@@ -13,8 +13,12 @@
   color: #B1B1B1;
 }
 
-#xacnhan input{
+#xacnhan a{
 	border-radius: 15px;
+	background:#8bc2f9;
+}
+#xacnhan a:hover{
+	background:#f9df75;
 }
 .btn {
   display: inline-block;
